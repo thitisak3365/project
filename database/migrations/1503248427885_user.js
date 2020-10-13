@@ -15,7 +15,7 @@ class UserSchema extends Schema {
       table.integer('IDcard',13).notNullable().unique()
       table.string('nationality').notNullable()
       table.string('address').notNullable()
-      table.integer('student_code',13).notNullable().unique()
+      table.integer('student_code',9 ).notNullable().unique()
       table.string('Department').notNullable()
       table.string('Email').notNullable().unique()
       table.string('user_name', 80).notNullable().unique()
@@ -31,3 +31,4 @@ class UserSchema extends Schema {
 }
 
 module.exports = UserSchema
+ 
